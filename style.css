@@ -1,0 +1,54 @@
+html {
+	--pink: #ff5959;
+	--blue: #4f9da6;
+	--yellow: #facf5a;
+	--text-color: #eee6e6;
+  box-sizing: border-box;
+  color: var(--text-color);
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.buttons {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-content: center;
+  font-size: 25vw;
+}
+
+.buttons__girls,
+.buttons__boys,
+.total {
+  display: grid;
+  place-content: center;
+}
+
+.buttons__girls {
+	background-color: var(--pink);
+}
+
+.buttons__boys {
+	background-color: var(--blue);
+}
+
+.total {
+  background-color: var(--yellow);
+  height: 20vh;
+  font-size: 20vh;
+}
