@@ -1,26 +1,41 @@
 html {
-	--pink: #ff5959;
-	--blue: #4f9da6;
-	--yellow: #facf5a;
-	--text-color: #eee6e6;
+  --pink: #ff5959;
+  --blue: #4f9da6;
+  --yellow: #facf5a;
+  --text-color: #eee6e6;
+  --past-text: #949292;
   box-sizing: border-box;
   color: var(--text-color);
   font-family: 'Montserrat', sans-serif;
   overflow: hidden;
+  cursor: pointer;
 }
 
 *,
 *:before,
 *:after {
-	box-sizing: inherit;
-	margin: 0;
-	padding: 0;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   height: 100vh;
+}
+
+.past {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+}
+
+.list-item {
+  display: flex;
+  color: var(--past-text);
+  justify-content: space-around;
+  padding: 5px 0;
 }
 
 .buttons {
@@ -40,11 +55,11 @@ html {
 }
 
 .buttons__girls {
-	background-color: var(--pink);
+  background-color: var(--pink);
 }
 
 .buttons__boys {
-	background-color: var(--blue);
+  background-color: var(--blue);
 }
 
 .total {
